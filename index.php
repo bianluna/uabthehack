@@ -1,7 +1,6 @@
 <?php
 
 $accion = $_GET['accion']??NULL;
-$filesAbsolutePath= '/home/TDIW/tdiw-g6/public_html/uploadedFiles/'; 
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
