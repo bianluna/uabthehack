@@ -13,3 +13,5 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error al obtener citas:", error));
 });
+
+import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed@latest/dist/web.js";
