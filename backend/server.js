@@ -27,7 +27,7 @@ db.connect((err) => {
     }
 });
 
-// Ruta para obtener citas médicas
+// Ruta para obtener citas médicas - Ejemplo
 app.get('/citas', (req, res) => {
     db.query('SELECT * FROM citas', (err, results) => {
         if (err) {
