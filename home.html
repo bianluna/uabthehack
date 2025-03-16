@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,10 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
-
 </head>
 
-<body class="gradient-advanced">
+<body class="gradient-advanced" style="margin: 0; padding: 0; height: 100vh;">
 
     <nav class="navbar">
         <div class="navbar-content">
@@ -44,20 +42,43 @@
         </div>
     </section>
 
-    <section class="chatbot-container">
-        <script type="module">
-            import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-            Chatbot.init({
-                chatflowid: "318bac2d-0fcc-4842-95d0-eade8b2ded5e",
-                apiHost: "https://pr-az-pro-ai-ca-fw-uab15.livelyhill-0e586e2e.northeurope.azurecontainerapps.io",
-            })
-        </script>
-    </section>
+    <!-- Full-Page Chatbot Element -->
+    <flowise-fullchatbot  class="chatbot-container"></flowise-fullchatbot>
+
+    <!-- Chatbot Script -->
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed@latest/dist/web.js";
+
+        // Initialize the full-page chatbot
+        Chatbot.initFull({
+            chatflowid: "318bac2d-0fcc-4842-95d0-eade8b2ded5e", // Replace with your actual chatflow ID
+            apiHost: "https://pr-az-pro-ai-ca-fw-uab15.livelyhill-0e586e2e.northeurope.azurecontainerapps.io", // Replace with your API host
+            theme: {
+                chatWindow: {
+                    backgroundColor: "#E7DDFE", // Background color for the chat window
+                    textColor: "#364C84", // Text color for messages
+                },
+                textInput: {
+                    backgroundColor: "#DCEBFF", // Input field background color
+                    textColor: "#364C84", // Input text color
+                },
+                userMessage: {
+                    backgroundColor: "#FFE4D6", // User message bubble color
+                    textColor: "#364C84", // User message text color
+                },
+                botMessage: {
+                    backgroundColor: "#D9F7E9", // Bot message bubble color
+                    textColor: "#364C84", // Bot message text color
+                },
+            },
+        });
+    </script>
 
     <footer>
         <section>
             <p id="">Developed by Laia Ubeda Vivet and Bianca Luna for UAB THE HACK!</p>
         </section>
     </footer>
+</body>
 
 </html>

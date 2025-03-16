@@ -142,12 +142,12 @@ body {
 
 /*chatbot*/
 .chatbot-container{
-    bottom: 0;
-    right: 0;
-    margin: 20px;
-    z-index: 1000;
-    width: -webkit-fill-available;
-    height: 500px;
+ 
+    width: 400px; /* Set width of the square */
+    height: 400px; /* Set height of the square */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    
 }
 
 
