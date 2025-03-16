@@ -55,32 +55,56 @@
             apiHost: "https://pr-az-pro-ai-ca-fw-uab15.livelyhill-0e586e2e.northeurope.azurecontainerapps.io", // Replace with your API host
             initialMessage: "Hola, soy Ernie el Bot. ¿En qué puedo ayudarte?", // Initial message to display in the chat window
             theme: {
+                button: {
+                    backgroundColor: '#E7F1A8',
+                    textColor: '#364C84',
+                    borderRadius: '5px',
+                },
                 chatWindow: {
-                    backgroundColor: "#E7DDFE", // Background color for the chat window
+                    showTitle: true,
+                    showAgentMessages: true,
+                    title: 'Hablemos!',
+                    titleColor:'#364C84',
+                    backgroundColor: "#FFFDF5", // Background color for the chat window
                     textColor: "#364C84", // Text color for messages
                     welcomeMessage: 'Hola! Soy Ernie el Bot. ¿En qué puedo ayudarte?', // Welcome message displayed when the chat window is opened
-                    errorMessage: 'Ups, algo salió mal. Por favor, inténtalo de nuevo.', // Error message displayed when an error occurs
+                    errorMessage: 'Ups!, algo salió mal. Por favor, inténtalo de nuevo.', // Error message displayed when an error occurs
+                    botMessage: {
+                        backgroundColor: '#f7f8ff',
+                        textColor: '#364C84',
+                        showAvatar: true,
+                        avatarSrc: 'resources/erniethebot.png',
+                    },
+                    
+                    userMessage: {
+                        backgroundColor: '#E7F1A8',
+                        textColor: '#364C84',
+                        showAvatar: true,
+                        avatarSrc: 'resources/useravatar.png'
+                    },
+                },
                 },
                 textInput: {
                     backgroundColor: "#DCEBFF", // Input field background color
                     textColor: "#364C84", // Input text color
                 },
                 userMessage: {
-                    backgroundColor: "#FFE4D6", // User message bubble color
+                    backgroundColor: "#E7F1A8", // User message bubble color
                     textColor: "#364C84", // User message text color
                 },
                 botMessage: {
-                    backgroundColor: "#D9F7E9", // Bot message bubble color
+                    backgroundColor: "#95B1EE", // Bot message bubble color
                     textColor: "#364C84", // Bot message text color
                 },
+                
             },
-        });
+        );
 
     </script>
 
     <footer>
         <section>
-            <p id="">Developed by Laia Ubeda Vivet and Bianca Luna for UAB THE HACK!</p>
+            <p id="">Developed by Laia Ubeda Vivet and Bianca Luna for UAB THE HACK!  <img src="resources/stars.png" width="20px" /></p>
         </section>
     </footer>
 </body>
