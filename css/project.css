@@ -1,0 +1,38 @@
+.h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #FF7BB5;
+    margin-bottom: 0;
+}
+
+
+.text-container{
+    display: grid;
+    grid-template-areas: 'text img';
+    padding: 90px;
+    width: -webkit-fill-available;
+}
+
+#text{
+    text-align: left;
+    padding-right: 200px;  
+}
+
+.header{
+    margin-bottom: 50px;
+}
+
+.title{
+    margin-bottom: 5px;
+}
+
+.subtitle{
+    margin-top: 0;
+    color:#FF7BB5 ;
+}
+
+#img{
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+

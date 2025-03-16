@@ -97,7 +97,6 @@ body {
     color:#364C84;
     text-align: center;
     backdrop-filter: blur(20px);
-    background-color: rgba(183,188,210,0.25);
     
 }
 
@@ -114,11 +113,12 @@ body {
     border-radius: 25px;
     display: none;
     position: absolute;
+    background-color: #f9f9f9;
     min-width: 160px;
-    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
-    backdrop-filter: blur(15px); /* Glassmorphism effect */
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    backdrop-filter: blur(15px); /* Glassmorphism effect */
+
   }
   
   .dropdown-content a {
@@ -140,8 +140,15 @@ body {
 
 
 
-/*portada*/
-
+/*chatbot*/
+.chatbot-container{
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    z-index: 1000;
+    width: -webkit-fill-available;
+    height: 500px;
+}
 
 
 
@@ -153,32 +160,33 @@ body {
     justify-items: center;
 }
 
-
-/* footer */
-#nombreFooter{
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 0;
-    padding-left: 150px;
-}
-
-#pFooter{
-    padding-left: 150px;
-}
-
 hr{
     border: 1px solid #e1deda;
     width:80%;
     margin:0 auto;
 }
+
+
 /* es al elemento y no a una clase */
-footer{
-    width: 100%; /* Usa la vista completa del ancho de la ventana */
+footer {
+    width: 100%; /* Use the full width of the viewport */
     padding-top: 36px;
     padding-bottom: 150px;
-    color: #e1deda;
+    color: #E7F1A8;
+    display: flex; /* Add this for flexbox layout */
     flex-wrap: wrap;
-}
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background-color: #364C84; /* Optional: Add a background color */
+  }
+  
+  /* Optional: Add media queries for responsive design */
+  @media (max-width: 768px) {
+    footer {
+      padding-bottom: 50px; /* Adjust padding for smaller screens */
+    }
+  }
+  
 
 .gradient-advanced {
     background: radial-gradient(50% 123.47% at 50% 50%, #95B1EE 0%, #E7F1A8 100%),
