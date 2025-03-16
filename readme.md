@@ -1,3 +1,8 @@
+Nombres integrantes: Bianca Luna y Laia Úbeda
+Nombre equipo: Hackie Chans
+
+Enlace al Flowise AI:https://pr-az-pro-ai-ca-fw-uab15.livelyhill-0e586e2e.northeurope.azurecontainerapps.io/canvas/30f4d083-9b10-4943-809b-7248b4acc214
+
 # UAB THE HACK & PAYRETAILERS 
 
 Como parte del reto en la Hackathon, se ideó la propuesta de "Ernie el Bot" siguiendo las pautas del desafío planteado por PayRetailers, con el objetivo de lograr una herramienta usando responsablemente la IA generando un impacto positivo en las comunidades de América Latina facilitando el acceso a recursos, oportunidades de empleo así como el desarrollo económico y energético.
