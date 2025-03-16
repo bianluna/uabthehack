@@ -43,7 +43,7 @@
     </section>
 
     <!-- Full-Page Chatbot Element -->
-    <flowise-fullchatbot  class="chatbot-container"></flowise-fullchatbot>
+    <flowise-fullchatbot  class="chatbot-container" style="border-radius: 20px;"></flowise-fullchatbot>
 
     <!-- Chatbot Script -->
     <script type="module">
@@ -55,16 +55,13 @@
             apiHost: "https://pr-az-pro-ai-ca-fw-uab15.livelyhill-0e586e2e.northeurope.azurecontainerapps.io", // Replace with your API host
             initialMessage: "Hola, soy Ernie el Bot. ¿En qué puedo ayudarte?", // Initial message to display in the chat window
             theme: {
+                
                 button: {
                     backgroundColor: '#E7F1A8',
-                    textColor: '#364C84',
-                    borderRadius: '5px',
                 },
                 chatWindow: {
                     showTitle: true,
                     showAgentMessages: true,
-                    title: 'Hablemos!',
-                    titleColor:'#364C84',
                     backgroundColor: "#FFFDF5", // Background color for the chat window
                     textColor: "#364C84", // Text color for messages
                     welcomeMessage: 'Hola! Soy Ernie el Bot. ¿En qué puedo ayudarte?', // Welcome message displayed when the chat window is opened
@@ -82,6 +79,12 @@
                         showAvatar: true,
                         avatarSrc: 'resources/useravatar.png'
                     },
+                    textInput: {
+                    sendButtonColor: '#E7F1A8',
+                    maxChars: 50,
+                    maxCharsWarningMessage: 'Haz excedido el límite de caracteres, por favor, intenta escribir un mensaje mas breve.',
+
+                },
                 },
                 },
                 textInput: {
@@ -96,6 +99,7 @@
                     backgroundColor: "#95B1EE", // Bot message bubble color
                     textColor: "#364C84", // Bot message text color
                 },
+
                 
             },
         );

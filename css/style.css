@@ -137,7 +137,9 @@ body {
   }
   
 
-
+.logo{
+    margin-bottom: 30px;
+}
 
 /*chatbot*/
 .chatbot-container{
@@ -147,9 +149,10 @@ body {
     flex-direction: column;
     width: 70%; /* Set width of the square */
     height: 65%; /* Set height of the square */
-    border-radius: 15px; /* Rounded corners */
+    border-radius: 55px; /* Rounded corners */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
+
 }
 
 
@@ -182,7 +185,7 @@ footer {
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     background-color: #364C84; /* Optional: Add a background color */
-    margin-top: auto;
+    margin-top: 60px;
   }
   
   /* Optional: Add media queries for responsive design */
