@@ -1,57 +1,63 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-	
-	<meta charset="utf-8">
-	<title>Ernie el Bot</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Ernie el Bot</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body class="gradient-advanced">
 
-	<!--<header>-->
-	<nav class="navbar">
-		<div class="navbar-content" >
+    <nav class="navbar">
+        <div class="navbar-content">
+            <!--logo navbar-->
+            <div class="logo">
+                <h1>Ernie el Bot</h1>
+            </div>
 
-			<!--logo navbar-->
-			<div class="logo">
-				<h1>Ernie el Bot</h1>
-			</div>
+            <!--navlinks-->
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a href="#">Contenido</a>
+                    <div class="dropdown-content">
+                        <a href="project.html"> Proyecto </a>
+                        <a href="resources.html"> Recursos </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-			<!--navlinks-->
-			<div class="nav-links">
-				<div class="dropdown">
-					<a href="#">Contenido</a>
-					<div class="dropdown-content">
-						<a href="views/.html"> Preguntas Frecuentes </a>
-						<a href="views/.html"> Recursos </a>
-						<a href="views/.html"> Objetivo </a>
-					</div>
-				</div>
-			</div>
+    <section class="grid-container">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="resources/erniethebot.png" width="100px" alt="Ernie el Bot Logo" />
+            </a>
+        </div>
+    </section>
 
-		</div>
-	</nav>
-	<!--</header>-->
+    <section class="chatbot-container">
+        <script type="module">
+            import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+            Chatbot.init({
+                chatflowid: "318bac2d-0fcc-4842-95d0-eade8b2ded5e",
+                apiHost: "https://pr-az-pro-ai-ca-fw-uab15.livelyhill-0e586e2e.northeurope.azurecontainerapps.io",
+            })
+        </script>
+    </section>
 
-	<section class="grid-container">
-		<div class="logo">
-			<a href="../index.html">
-				<img src="resources/erniethebot.png" width="100px"/>
-			</a>
-		</div>
-	</section>
-</body>
+    <footer>
+        <section>
+            <p id="">Developed by Laia Ubeda Vivet and Bianca Luna for UAB THE HACK!</p>
+        </section>
+    </footer>
 
-<footer>
-	<section>
-		<h1 id=""></h1>
-		
-	</section>
-</footer>
 </html>
